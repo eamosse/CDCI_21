@@ -116,7 +116,7 @@ class SortAlgorithmsTest {
         // Executes tests based on the current input value.
         ThrowingConsumer<Integer[]> testExecutor = (input) -> testSortingAlgorithm(input);
 
-        // Returns a stream of dynamic tests.
+        // Returns a stream of dynamic tests
         return DynamicTest.stream(inputGenerator, displayNameGenerator, testExecutor);
     }
 
