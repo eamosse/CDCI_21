@@ -57,17 +57,17 @@ class SortAlgorithmsTest {
         testSortingAlgorithm(arrayToTest);
         testSortingAlgorithm(arrayToTest);
     }
-	
-/*    @DisplayName("Should fail : to test Continuous Integration")
+
+    @DisplayName("Should fail : to test Continuous Integration")
     @Test
-	void badTest() {
-		Integer[] input = new Integer[]{1, 3, 5, -3, 15, Integer.MAX_VALUE};
-		//Forget to sort the array : 
-		//SortAlgorithms.bubbleSort(input);
-	  int valueToTest = input[input.length/2];
-		   assertTrue( input[0]<=valueToTest );
-		   assertTrue( valueToTest <= input[input.length-1]);
-	}*/
+    void badTest() {
+        Integer[] input = new Integer[]{1, 3, 5, -3, 15, Integer.MAX_VALUE};
+        //Forget to sort the array :
+        //SortAlgorithms.bubbleSort(input);
+        int valueToTest = input[input.length / 2];
+        assertTrue(input[0] <= valueToTest);
+        assertTrue(valueToTest <= input[input.length - 1]);
+    }
 
     void testSortingAlgorithm(Integer[] input) {
         int length = input.length;
